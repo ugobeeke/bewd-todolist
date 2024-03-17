@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   post 'tasks' => 'tasks#create'
   put '/tasks/:id/mark_complete' => 'tasks#mark_complete'
   put '/tasks/:id/mark_active'   => 'tasks#mark_active'
+  delete 'tasks/:id' => 'tasks#destroy'
 
   # Add routes below this line
 
